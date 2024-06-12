@@ -1,13 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
-
-        <title>Digital Knee X-ray Images Classification</title>
-
-        <meta name="theme-color" content="#ffffff">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Digital Knee X-ray Images Classification</title>
+    <meta name="theme-color" content="#ffffff">
+</head>
 
 <body>
 
@@ -21,7 +22,7 @@
 
         {% extends "base.html" %} {% block content %}
 
-        <h2>Implemented by Keras and Tensorflow</h2>
+        
 
         <p class="description">
             Choose your Knee X-Ray visual file and click Predict to get your diagnosis.
@@ -53,10 +54,9 @@
 
         </div>
 
+        {% endblock %}
 
     </div>
-
-    {% endblock %}
 
 </body>
 
